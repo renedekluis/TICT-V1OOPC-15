@@ -43,7 +43,9 @@ public:
    /// with just a whole value.
    rational( int counter, int denominator = 1 ):
      counter( counter ), denominator( denominator )
-   {}
+   {
+		reduce();
+	}
    
    /// \brief   
    /// compare two rational values
@@ -52,7 +54,7 @@ public:
    /// if and only if the counter and denminator of both
    /// operands are equal.
    bool operator==( const rational & rhs ) const {
-      return ( counter == rhs.counter ) || ( denominator == rhs.denominator );
+      return ( counter == rhs.counter ) && ( denominator == rhs.denominator );
    }
 
    /// \brief
@@ -67,7 +69,7 @@ public:
          << rhs.counter 
          << "/" 
          << rhs.denominator
-         << "}";
+         << "]";
    }   
    
    /// \brief   
@@ -75,7 +77,7 @@ public:
    /// \details
    /// This operator* multiplies a rational value by an integer value.
    rational operator*( const int rhs ) const {
-      return rational( counter * rhs, denominator * rhs );
+      return rational( counter * rhs, denominator  );
    }
    
    /// \brief   
@@ -83,9 +85,9 @@ public:
    /// \details
    /// This operator* multiplies a rational value by a rational value.
    rational operator*( const rational & rhs ) const {
-      return rational( 
-         denominator * rhs.denominator,
-         counter * rhs.counter
+		return rational( 
+			counter * rhs.counter,
+			denominator * rhs.denominator
       );
    }
    
@@ -105,10 +107,10 @@ public:
    /// \details
    /// This operator*= multiplies a rational value, what is in front of the *=, by an other rational variable.
    rational operator*=( const rational & rhs ){
-      counter = counter + rhs.counter;
-      denominator += rhs.denominator;
+      counter =  counter * rhs.counter;
+      denominator = denominator  * rhs.denominator;
       reduce();
-      return rhs;
+      return *this;
    }
    
 };

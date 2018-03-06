@@ -11,7 +11,7 @@ TEST_CASE( "constructor, two_parameters" ){
    rational v( 3, 4 );
    std::stringstream s;
    s << v;
-   REQUIRE( s.str() == "[3/4}" );   
+   REQUIRE( s.str() == "[3/4]" );   
 }
 
 TEST_CASE( "equality, equal" ){
@@ -21,7 +21,7 @@ TEST_CASE( "equality, equal" ){
 
 TEST_CASE( "equality, unequal" ){
    rational v( 1, 2 );
-   REQUIRE( ! ( v == rational( 1, 3 )) ); 
+   REQUIRE(  !( v == rational( 1, 3 )) ); 
 }
 
 TEST_CASE( "constructor, two_parameters; reduction" ){

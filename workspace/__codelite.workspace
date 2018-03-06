@@ -42,10 +42,16 @@
       <Project Name="03_02_Stuiteren" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="03_03_Verdwijnen" Path="03_03_Verdwijnen/_codelite.project" Active="Yes"/>
+  <Project Name="03_03_Verdwijnen" Path="03_03_Verdwijnen/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="03_03_Verdwijnen" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="04_03-Patroon" Path="04_03-Patroon/_codelite.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="04_03-Patroon" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
   <Project Name="12-10-bounce" Path="12-10-bounce/_codelite.project" Active="No"/>
