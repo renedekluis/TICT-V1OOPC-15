@@ -4,16 +4,9 @@
   <wxString Value="D:\Documents-(D)\HBO-ICT\git\HBO-ICT\Jaar1\TICT-V1OOPC-15\workspace\__codelite.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\Documents-(D)\HBO-ICT\git\HBO-ICT\Jaar1\TICT-V1OOPC-15\workspace\04_03-Patroon\main.cpp" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
-      <int Value="11" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\Documents-(D)\HBO-ICT\git\HBO-ICT\Jaar1\TICT-V1OOPC-15\workspace\04_03-Patroon\makefile" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="11" Name="CurrentLine"/>
+      <wxString Value="D:\Documents-(D)\HBO-ICT\git\HBO-ICT\Jaar1\TICT-V1OOPC-15\workspace\04_04-Input\main.cpp" Name="FileName"/>
+      <int Value="28" Name="FirstVisibleLine"/>
+      <int Value="52" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

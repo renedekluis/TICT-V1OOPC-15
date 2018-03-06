@@ -1,39 +1,38 @@
 #include "hwlib.hpp"
-#include <vector>
 
 
-void blink( hwlib::pin_in_out & led );
-
-
-
-int main( void ){	
-   // kill the watchdog
-   WDT->WDT_MR = WDT_MR_WDDIS;
-   
-   auto led1 = hwlib::target::pin_in_out( 1, 27 );
-   auto led2 = hwlib::target::pin_in_out( 1, 27 );
-   auto led3 = hwlib::target::pin_in_out( 1, 27 );
-   auto led4 = hwlib::target::pin_in_out( 1, 27 );
-   
-   led1.set(1);
-   led2.set(1);
-   led3.set(0);
-   led4.set(0);
-   
-
-}
-
-void pattern(std::vector<hwlib::pin_in_out*> leds, int pattern)
-{
+int main( void )
+{	
+	// kill the watchdog
+	WDT->WDT_MR = WDT_MR_WDDIS;
 	
+	namespace target = hwlib::target;
+	
+	auto led0 = target::pin_out(target::pins::d17);
+	auto led1 = target::pin_out(target::pins::d16);
+	auto led2 = target::pin_out(target::pins::d15);
+	auto led3 = target::pin_out(target::pins::d14);
+	
+	target::pin_out* leds[] = {&led0, &led1, &led2, &led3};
+	
+	
+	int patternArray[] = 
+	{
+		0b0011,
+		0b0110,
+		0b1100,
+		0b0110
+	};
+	
+	
+	while(1){
+		for (int i = 0; i < 4; i++){
+			for (int j = 0; j < 4; j++){
+				leds[j]->set(( patternArray[i] & (0x01 << j) ));
+			}
+			hwlib::wait_ms(1000);
+		}
+	}
+
 }
 
-void blink( hwlib::pin_in_out & led ){
-   led.direction_set_output();
-   while(1){
-      led.set( 1 );
-      hwlib::wait_ms( 200 );
-      led.set( 0 );
-      hwlib::wait_ms( 200 );      
-   }
-}
