@@ -54,34 +54,46 @@
       <Project Name="04_03-Patroon" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="04_04-Input" Path="04_04-Input/_codelite.project" Active="Yes"/>
+  <Project Name="04_04-Input" Path="04_04-Input/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="04_04-Input" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="12-10-bounce" Path="12-10-bounce/_codelite.project" Active="No"/>
+  <Project Name="05_01-HC595" Path="05_01-HC595/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="12-10-bounce" ConfigName="Release"/>
+      <Project Name="05_01-HC595" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="05_02-Decorator" Path="05_02-Decorator/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="05_02-Decorator" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="05_03-Kitt" Path="05_03-Kitt/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="05_03-Kitt" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="06_01-oled" Path="06_01-oled/_codelite.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="06_01-oled" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="12_10-bounce" Path="12_10-bounce/_codelite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="12_10-bounce" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
   <Project Name="Keypad-TEST" Path="Keypad-TEST/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Keypad-TEST" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
-  <Project Name="opdracht22_4" Path="opdracht22_4/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="opdracht22_4" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
-  <Project Name="opdracht22_5" Path="opdracht22_5/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="opdracht22_5" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
   <Project Name="opdracht22_6" Path="opdracht22_6/_codelite.project" Active="No"/>

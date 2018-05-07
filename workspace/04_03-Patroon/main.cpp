@@ -8,10 +8,10 @@ int main( void )
 	
 	namespace target = hwlib::target;
 	
-	auto led0 = target::pin_out(target::pins::d17);
-	auto led1 = target::pin_out(target::pins::d16);
-	auto led2 = target::pin_out(target::pins::d15);
-	auto led3 = target::pin_out(target::pins::d14);
+	auto led0 = target::pin_out(target::pins::d7);
+	auto led1 = target::pin_out(target::pins::d6);
+	auto led2 = target::pin_out(target::pins::d5);
+	auto led3 = target::pin_out(target::pins::d4);
 	
 	target::pin_out* leds[] = {&led0, &led1, &led2, &led3};
 	
